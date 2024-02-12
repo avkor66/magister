@@ -1,3 +1,85 @@
+h1 {
+  margin-block-start: 0;
+}
 body {
-  background-color: aqua;
+  margin: 0;
+}
+.header__img {
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.header {
+  margin: 0;
+  width: 100%;
+  background: rgb(76,66,246);
+  background: linear-gradient(0deg, rgba(76,66,246,1) 0%, rgba(81,125,247,1) 55%, rgba(0,212,255,1) 100%);
+}
+.contain {
+  width: 1000px;
+  margin: 0 auto;
+}
+.head__section {
+  display: block;
+  margin: 0 auto;
+}
+.cards {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.offer {
+  display: flex;
+
+}
+.right {
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+}
+.left {
+  width: 50%;
+}
+.right >img {
+  height: 400px;
+}
+.offer__button {
+  height: 50px;
+  width: 150px;
+  background-color: chocolate;
+  margin: 20px 50px;
+  font-size: 24px;
+  color: aliceblue;
+  font-weight: 600;
+}
+.card__text {
+  padding: 0 20px 20px;
+}
+.image {
+  margin: 30px 0 0 0;
+}
+.head__section {
+  margin-top: 50px;
+  text-align: center;
+}
+footer {
+  height: 100px;
+  color: aliceblue;
+}
+.all {
+  padding-top: 30px;
+}
+.card__text {
+  text-align: center;
+}
+.card__title {
+  margin: 30px 0;
 }
