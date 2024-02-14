@@ -1,13 +1,15 @@
 h1 {
   margin-block-start: 0;
 }
+.logo {
+  padding: 50px 0px 0px;
+}
 body {
   margin: 0;
 }
 .header__img {
   margin-left: 20px;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 .header {
   margin: 0;
@@ -32,54 +34,110 @@ body {
 .card {
   margin: 30px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .offer {
   display: flex;
-
+  justify-content: space-between;
+  padding-bottom: 80px;
 }
 .right {
   display: flex;
   align-items: center;
-
-  width: 50%;
+  width: 40%;
 }
 .left {
-  width: 50%;
+  padding-top: 30px;
+  font-weight: bold;
+  width: 40%;
 }
 .right >img {
-  height: 400px;
+  height: 350px;
+}
+button {
+  border-width: 0;
 }
 .offer__button {
   height: 50px;
-  width: 150px;
-  background-color: chocolate;
-  margin: 20px 50px;
-  font-size: 24px;
-  color: aliceblue;
+  width: 200px;
+  background-color: rgb(198, 173, 64);
+  margin: 20px 0px;
+  font-size: 18px;
+  color: #000;
   font-weight: 600;
 }
+.offer__title {
+  color: #fff;
+  font-size: 28px;
+}
+.offer__title > span {
+  font-size: 50px;
+}
+
 .card__text {
   padding: 0 20px 20px;
 }
 .image {
-  margin: 30px 0 0 0;
+  text-align: center;
+  margin-top: 30px;
 }
 .head__section {
-  margin-top: 50px;
+  margin-top: 70px;
   text-align: center;
+  font-weight: bold;
 }
 footer {
   height: 100px;
   color: aliceblue;
 }
-.all {
-  padding-top: 30px;
-}
+
 .card__text {
   text-align: center;
 }
 .card__title {
   margin: 30px 0;
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 80px 0;
+  background-color:gainsboro;
+}
+.forms__title {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.forms__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ .inpt {
+  height: 50px;
+  width: 400px;
+  margin-top: 30px;
+  font-size: 20px;
+  color: darkgrey;
+  font-weight: 800;
+  padding-left: 30px;
+ }
+ .btn {
+  height: 50px;
+  width: 435px;
+  margin-top: 30px;
+  font-size: 20px;
+  background-color: rgb(198, 173, 64);
+  border: 0;
+ }
