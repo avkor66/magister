@@ -19,7 +19,6 @@ body {
   animation-name: headerAnimation;
   animation-delay: 5s;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 @keyframes headerAnimation {
   0% {
@@ -63,26 +62,18 @@ body {
   padding: 0 20px 0px;
   text-align: center;
   cursor: pointer;
-  transition: all 2s;
+  transition: all 0.5s;
 }
 .card__text:hover {
-  transform: scale(3);
+  transform: scale(1.5);
 }
 .card__title {
   cursor: pointer;
   padding: 30px 0;
-  transition: all 2s;
 }
-.card__title:hover {
-  transform: translate(30px, 0) rotate(180deg);
-  background-color: bisque;
-}
+
 .card__img {
   cursor: pointer;
-  transition: all 1s;
-}
-.card__img:hover {
-  transform: skew(30deg, 30deg);
 }
 h4 {
   margin-block-end: 0;
@@ -102,14 +93,14 @@ h4 {
 }
 .right:hover {
   animation-name: headerAnimationImage;
-  animation-duration: 5s;
+  animation-duration: 2s;
 }
 @keyframes headerAnimationImage {
   from {
     scale: 1;
   } 
   to {
-    scale: 3;
+    scale: 1.2;
   }
 }
 
@@ -200,7 +191,97 @@ footer {
   border: 0;
   cursor: pointer;
  }
- .inpt:hover {
-  animation: flipInX;
-  animation-duration: 2s;
+ @media only screen and (max-width: 1070px) {
+  .offer {
+    justify-content: center;
+    gap: 30px;
+  }
+  .right > img {
+    height: 300px;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
  }
+ @media only screen and (max-width: 1000px) {
+  .card__text { 
+    width: 200px;
+  }
+ }
+ @media only screen and (max-width: 900px) {
+  .contain { 
+    width: auto;
+  }
+  .left {
+    width: 250px;
+  }
+ }
+ @media only screen and (max-width: 800px) {
+  .right > img {
+    height: 250px;
+  }
+  .offer {
+    gap: 50px;
+  }
+ }
+ @media only screen and (max-width: 767px) {
+  .forms__input > label {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+ }
+ @media only screen and (max-width: 670px) {
+  .offer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .left, .right {
+    width: 90%;
+  }
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .offer__button {
+    width: 300px;
+  }
+  .head__section {
+    margin-top: 30px;
+  }
+  .cards {
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .card {
+    margin-bottom: 0;
+  }
+  .forms__title {
+    width: 90%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 3cap;
+  }
+  .forms__input {
+    width: 90%;
+  }
+  .inpt {
+    width: -webkit-fill-available;
+  }
+ }
+ @media only screen and (max-width: 450px) {
+  .offer__button {
+    width: 100%;
+  }
+  .offer__title {
+    width: 100%;
+  }
+  .offer__text {
+    width: 100%;
+  }
+}
